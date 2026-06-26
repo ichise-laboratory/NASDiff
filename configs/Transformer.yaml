@@ -1,0 +1,162 @@
+Air:
+  init:
+    n_steps: 24
+    n_features: 132
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+Italy_Air:
+  init:
+    n_steps: 12
+    n_features: 13
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+Pedestrian:
+  init:
+    n_steps: 24
+    n_features: 1
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+Pems_Traffic:
+  init:
+    n_steps: 24
+    n_features: 862
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+ETT:
+  init:
+    n_steps: 48
+    n_features: 7
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+Electricity_Load:
+  init:
+    n_steps: 96
+    n_features: 370
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+Physionet2012:
+  init:
+    n_steps: 48
+    n_features: 37
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+Physionet2019:
+  init:
+    n_steps: 48
+    n_features: 33
+    n_layers: 2
+    d_model: 64
+    n_heads: 4
+    d_k: 16
+    d_v: 16
+    d_ffn: 128
+    dropout: 0.1
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.001
+
+info:
+  model_name: Transformer

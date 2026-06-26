@@ -1,0 +1,186 @@
+Air:
+  init:
+    n_feature: 132
+    d_target: 24
+    n_layers: 6
+    n_heads: 8
+    n_channels: 32
+    n_sampling_times: 1
+    d_time_embedding: 256
+    d_feature_embedding: 16
+    d_diffusion_embedding: 32
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0036662098229766093
+
+Italy_Air:
+  init:
+    n_feature: 13
+    d_target: 12
+    n_layers: 3
+    n_heads: 16
+    n_channels: 128
+    n_sampling_times: 1
+    d_time_embedding: 256
+    d_feature_embedding: 8
+    d_diffusion_embedding: 32
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.000722830003844826
+
+Pedestrian:
+  init:
+    n_feature: 1
+    d_target: 1
+    n_layers: 3
+    n_heads: 2
+    n_channels: 64
+    n_sampling_times: 1
+    d_time_embedding: 256
+    d_feature_embedding: 32
+    d_diffusion_embedding: 32
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0009538000135184797
+
+Pems_Traffic:
+  init:
+    n_feature: 862
+    d_target: 862
+    n_layers: 2
+    n_heads: 1
+    n_channels: 64
+    n_sampling_times: 1
+    d_time_embedding: 64
+    d_feature_embedding: 32
+    d_diffusion_embedding: 64
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.007575643577032553
+
+ETT:
+  init:
+    n_feature: 7
+    d_target: 7
+    n_layers: 4
+    n_heads: 4
+    n_channels: 128
+    n_sampling_times: 1
+    d_time_embedding: 128
+    d_feature_embedding: 16
+    d_diffusion_embedding: 128
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0012659791476320047
+
+Electricity_Load:
+  init:
+    n_feature: 370
+    d_target: 370
+    n_layers: 3
+    n_heads: 4
+    n_channels: 16
+    n_sampling_times: 1
+    d_time_embedding: 128
+    d_feature_embedding: 8
+    d_diffusion_embedding: 32
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0019998503932952497
+
+Physionet2012:
+  init:
+    n_feature: 37
+    d_target: 37
+    n_layers: 5
+    n_heads: 8
+    n_channels: 128
+    n_sampling_times: 1
+    d_time_embedding: 32
+    d_feature_embedding: 8
+    d_diffusion_embedding: 256
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0004496995494581241
+
+Physionet2019:
+  init:
+    n_feature: 33
+    d_target: 33
+    n_layers: 4
+    n_heads: 8
+    n_channels: 32
+    n_sampling_times: 1
+    d_time_embedding: 256
+    d_feature_embedding: 16
+    d_diffusion_embedding: 256
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0018788258888970985
+
+info:
+  model_name: CSDI

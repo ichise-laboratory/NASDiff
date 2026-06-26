@@ -1,0 +1,279 @@
+Air:
+  init:
+    seq_len: 24
+    d_feature: 132
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.3
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [0.0001, 0.02]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 4
+    optimizer: Adam
+    lr: 0.0001
+
+Italy_Air:
+  init:
+    seq_len: 12
+    d_feature: 13
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.7
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [0.0001, 0.02]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0001
+
+Pedestrian:
+  init:
+    seq_len: 24
+    d_feature: 1
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.3
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [0.0001, 0.02]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 4
+    optimizer: Adam
+    lr: 0.0001
+
+Pems_Traffic:
+  init:
+    seq_len: 24
+    d_feature: 862
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.3
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [ 0.0001, 0.02 ]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 4
+    optimizer: Adam
+    lr: 0.0001
+
+ETT:
+  init:
+    seq_len: 48
+    d_feature: 7
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.3
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [ 0.0001, 0.02 ]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 4
+    optimizer: Adam
+    lr: 0.0001
+
+Electricity_Load:
+  init:
+    seq_len: 96
+    d_feature: 370
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.3
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [ 0.0001, 0.02 ]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 4
+    optimizer: Adam
+    lr: 0.0001
+
+Physionet2012:
+  init:
+    seq_len: 48
+    d_feature: 37
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.3
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [ 0.0001, 0.02 ]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 4
+    optimizer: Adam
+    lr: 0.0001
+
+Physionet2019:
+  init:
+    seq_len: 48
+    d_feature: 33
+    d_embedding: 512
+    d_hidden: 2048
+    low_dim: 0.3
+    fre_decom: "slice"
+    flimit: 0.3
+    dropout: 0.1
+    qkv: 32
+    h: 16
+    N: 2
+    mask: True
+    pe: True
+    betas: [ 0.0001, 0.02 ]
+    n_T: 10
+    trajectory_len: 6
+    trajectory_num: 20
+    model_num: 'art_only'
+    last_step: "DDIM"
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 4
+    optimizer: Adam
+    lr: 0.0001
+
+General:
+  init:
+    n_T: 10                       # diffusion step count T in the paper
+    trajectory_len: 6             # short reverse trajectory length
+    trajectory_num: 20            # number of sampled short trajectories during training
+    trajectory_sample_num: 1      # number of sampled short trajectories during inference
+    fixed_last_step: False
+    last_step: "DDIM"
+    flimit: 0.30
+    lowrank: True
+    frequency: True
+    consistency: True
+    shortcut: True
+    low_dim: 0.3
+    fre_decom: "slice"
+    N: 4
+
+  setting:
+     BATCHSIZE: 4
+     lr: 0.0001
+
+info:
+  model_name: NASDiff

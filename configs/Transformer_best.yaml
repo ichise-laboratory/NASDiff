@@ -1,0 +1,166 @@
+# Source: TSI-Bench HPO results in
+# WenjieDu/Awesome_Imputation/benchmark_code/hpo_results.
+# The Physionet2012 HPO source uses n_features=35; this project uses 37,
+# so n_features is kept at 37 for compatibility with the local dataset.
+Air:
+  init:
+    n_steps: 24
+    n_features: 132
+    n_layers: 4
+    d_model: 128
+    d_ffn: 1024
+    n_heads: 8
+    d_k: 512
+    d_v: 128
+    dropout: 0.0
+    attn_dropout: 0.2
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 7.091472731808204e-05
+
+Italy_Air:
+  init:
+    n_steps: 12
+    n_features: 13
+    n_layers: 4
+    d_model: 256
+    d_ffn: 128
+    n_heads: 2
+    d_k: 256
+    d_v: 256
+    dropout: 0.0
+    attn_dropout: 0.4
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0001413262167249848
+
+Pedestrian:
+  init:
+    n_steps: 24
+    n_features: 1
+    n_layers: 5
+    d_model: 1024
+    d_ffn: 2048
+    n_heads: 4
+    d_k: 128
+    d_v: 32
+    dropout: 0.1
+    attn_dropout: 0.2
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.00013157218692030537
+
+Pems_Traffic:
+  init:
+    n_steps: 24
+    n_features: 862
+    n_layers: 1
+    d_model: 256
+    d_ffn: 256
+    n_heads: 8
+    d_k: 256
+    d_v: 256
+    dropout: 0.0
+    attn_dropout: 0.2
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.00033857435295409376
+
+ETT:
+  init:
+    n_steps: 48
+    n_features: 7
+    n_layers: 2
+    d_model: 128
+    d_ffn: 128
+    n_heads: 2
+    d_k: 512
+    d_v: 128
+    dropout: 0.2
+    attn_dropout: 0.1
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0008333763231640121
+
+Electricity_Load:
+  init:
+    n_steps: 96
+    n_features: 370
+    n_layers: 3
+    d_model: 128
+    d_ffn: 1024
+    n_heads: 8
+    d_k: 512
+    d_v: 128
+    dropout: 0.4
+    attn_dropout: 0.5
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.00036045685304465455
+
+Physionet2012:
+  init:
+    n_steps: 48
+    n_features: 37
+    n_layers: 2
+    d_model: 512
+    d_ffn: 2048
+    n_heads: 8
+    d_k: 64
+    d_v: 512
+    dropout: 0.0
+    attn_dropout: 0.2
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.00020674611402672293
+
+Physionet2019:
+  init:
+    n_steps: 48
+    n_features: 33
+    n_layers: 6
+    d_model: 64
+    d_ffn: 1024
+    n_heads: 4
+    d_k: 512
+    d_v: 128
+    dropout: 0.0
+    attn_dropout: 0.3
+    ORT_weight: 1.0
+    MIT_weight: 1.0
+  setting:
+    EPOCH: 10000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.00011675690237576063
+
+info:
+  model_name: Transformer

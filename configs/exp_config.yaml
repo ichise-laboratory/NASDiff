@@ -1,0 +1,24 @@
+global:
+  used_model: NASDiff
+  mode: train_multiple
+  use_best_config: true
+  seeds: [31]
+  patience: 30
+  val_interval: 1
+  padding_mode: 0.0
+  scalar: true
+  save_model: false
+  DEVICE: null
+
+train:
+  datasets: [ETT]
+  pattern: point
+  missing_ratio: 0.1
+  shuffle: true
+
+test:
+  BATCHSIZE_Test: 8
+  pattern: point
+  missing_ratio: 0.1
+  shuffle: false
+  test_sampling_times: 1

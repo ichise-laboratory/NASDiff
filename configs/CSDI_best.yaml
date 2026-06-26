@@ -1,0 +1,126 @@
+Pems_Traffic:
+  init:
+    n_feature: 862
+    d_target: 862
+    n_layers: 2
+    n_heads: 1
+    n_channels: 64
+    n_sampling_times: 1
+    d_time_embedding: 64
+    d_feature_embedding: 32
+    d_diffusion_embedding: 64
+    is_unconditional: False
+    n_diffusion_steps: 50
+    schedule: 'quad'
+    beta_start: 0.0001
+    beta_end: 0.5
+
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.007575643577032553
+
+Air:
+  init:
+    n_feature: 132
+    d_target: 24
+    n_layers: 6
+    n_heads: 16
+    n_channels: 64
+    n_sampling_times: 1
+    d_time_embedding: 512
+    d_feature_embedding: 32
+    d_diffusion_embedding: 32
+    is_unconditional: false
+    n_diffusion_steps: 50
+    schedule: quad
+    beta_start: 0.0001
+    beta_end: 0.5
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 32
+    optimizer: Adam
+    lr: 0.0007193891093736032
+
+Italy_Air:
+  init:
+    n_feature: 13
+    d_target: 12
+    n_layers: 6
+    n_heads: 8
+    n_channels: 64
+    n_sampling_times: 1
+    d_time_embedding: 128
+    d_feature_embedding: 16
+    d_diffusion_embedding: 64
+    is_unconditional: false
+    n_diffusion_steps: 50
+    schedule: quad
+    beta_start: 0.0001
+    beta_end: 0.5
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 8
+    optimizer: Adam
+    lr: 0.0004695141869893578
+info:
+  model_name: CSDI
+results:
+  Italy_Air:
+    MAE: 0.0985314326909271
+    MSE: 0.08691754952650566
+    MRE: 0.13324983887439212
+    Time_Usage: 6.0748
+  ETT:
+    MAE: 0.16633924759026822
+    MSE: 0.06642103315705294
+    MRE: 0.19376524060714984
+    Time_Usage: 3.5769
+  Pedestrian:
+    MAE: 0.24462783490497544
+    MSE: 12.745100886250214
+    MRE: 0.33750073904046457
+    Time_Usage: 30.4008
+ETT:
+  init:
+    n_feature: 7
+    d_target: 7
+    n_layers: 8
+    n_heads: 16
+    n_channels: 64
+    n_sampling_times: 1
+    d_time_embedding: 128
+    d_feature_embedding: 16
+    d_diffusion_embedding: 64
+    is_unconditional: false
+    n_diffusion_steps: 50
+    schedule: quad
+    beta_start: 0.0001
+    beta_end: 0.5
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 8
+    optimizer: Adam
+    lr: 0.0008525051621236621
+Pedestrian:
+  init:
+    n_feature: 1
+    d_target: 1
+    n_layers: 4
+    n_heads: 8
+    n_channels: 64
+    n_sampling_times: 1
+    d_time_embedding: 256
+    d_feature_embedding: 32
+    d_diffusion_embedding: 64
+    is_unconditional: false
+    n_diffusion_steps: 50
+    schedule: quad
+    beta_start: 0.0001
+    beta_end: 0.5
+  setting:
+    EPOCH: 1000
+    BATCHSIZE: 8
+    optimizer: Adam
+    lr: 0.0004922440878159925
